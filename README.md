@@ -12,7 +12,7 @@
                     (Products Page)
                     
     4.   Ghanisht Khurana
-                    (category wise Products page)
+                    (Footer and Individual Item page)
                     
     5.  Deepak 
                     (Carts Page)

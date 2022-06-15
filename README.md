@@ -9,7 +9,7 @@
                     (Login and Sugnup page)
                     
     3.  Janhavi Prabhu
-                    (Products Page)
+                    (Products Page and Data Collection)
                     
     4.   Ghanisht Khurana
                     (Footer and Individual Item page)

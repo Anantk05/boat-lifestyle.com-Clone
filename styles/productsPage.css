@@ -124,16 +124,16 @@ h1{
     margin-top: 0px;
 }
 .yousave{
-    position: relative;
-    left: 39px;
-    top: 587px;
-    background-color: white;
-    font-size: 12px;
-    color: red;
-    font-weight: bold;
+    width: 90px;
     padding: 5px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    font-size:  11px;
+    font-weight: bold;
+    color: red;
+    background-color: white;
+    margin-left: -6px;
+    margin-top: 6px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 #filtersort{
     display: flex;

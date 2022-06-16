@@ -2,24 +2,12 @@
 // Import Navbar and footer HTML from Components
 
 
+import {navbar} from "../components/navbar.js";
+
+document.getElementById("navbar_container").innerHTML = navbar();
 
 
-
-
-
-// ---function of add to cart--//
-
-// let addtoCart=()=>{
-//     var details=[]
-
-//     function Data(img,name,price){
-//         this.img=img;
-//         this.name=name;
-//         this.price=price;
-//     }
-
-//     img=document.getElementById
-// }
+// ----all products data--// start here---|
 
 
 

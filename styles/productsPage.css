@@ -7,27 +7,28 @@ body{
 }
 /* --css for product page of wireless Earbuds */
 #banner>img{
-
+   
     width: 100%;
     margin: 0px;
+     
 }
 .products_name{
     display: flex;
     gap: 8px;
     position: absolute;
-    top: 30px;
+    top: 160px;
     left: 50px;
     
 }
-a{
+.products_name>div>a{
     text-decoration: none;
     color: #ababab;
-    font-size: 14px;
+    font-size: 15px;
 }
 .products_name>div:nth-child(2){
     text-decoration: none;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
 }
 #container{
     

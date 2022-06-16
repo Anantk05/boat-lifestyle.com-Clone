@@ -2,7 +2,6 @@
 body{
     margin: 0px;
     background-color: #212529;
-    height: 1200px;
 }
 .cursor{
     cursor: pointer;
@@ -208,3 +207,4 @@ svg{
         display: block;
     }
 }
+

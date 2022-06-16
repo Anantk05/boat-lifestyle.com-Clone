@@ -1,0 +1,122 @@
+h1{
+    text-align: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+     
+}
+p{
+    text-align: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: grey;
+}
+form{
+    margin-left: 600px;
+    
+}
+a{
+    text-decoration: none;
+    color:  grey
+}
+input{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(64, 63, 63);
+    width: 350px;
+    height: 35px;
+    border-radius: 13px;
+    border: 1px solid rgb(167, 164, 164);
+}
+body{
+    margin: 0px;
+    background-color: #212529;
+    border: 0px;
+}
+input[type=submit] {
+    width: 28em;  height: 3em;
+    border: 0px;
+    border-radius: 13px;
+    color: white;
+   
+}
+input[type=submit]:hover {
+    background-color: red;
+    font-weight: bold;
+    
+    color: white;
+}
+#log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+    gap: 7px;
+}
+#fb{
+    height: 40px;
+    width: 40px;
+    
+}
+#goo{
+    height: 40px;
+    width: 40px;
+    border-radius: 60px;
+}
+  #popup{
+    text-align: center;
+    border-radius: 50px;
+    border: 7px solid red;
+    padding:  10px 10px;
+    width: 200px;
+    height: 270px;
+    transform: translate(-50%,50%)scale(2);
+    top: 4%;
+    left: 50%;
+    position: absolute;
+    background-color: rgb(79, 103, 103);
+    border-radius: 6px;
+    color: rgb(7, 7, 7);
+   opacity: 5;
+    transition:transform 0.4s , top 0.4s;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
+ }
+ #close{
+    position:relative;
+    right: -90px;
+    top: -280px;
+    font-size: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor:pointer;
+    border: 1px solid red;
+    border: 0px;
+    border-radius: 50px;
+     
+ }
+ #close:hover{
+    color:  white;
+    background-color:black
+ }
+  #boa{
+    width: 80px;
+    height: 30px;
+  }
+  #count{
+    color: white;
+  }
+  #cou{
+    color: rgb(4, 31, 31);
+    font-size: 15px;
+  }
+  #code{
+    color: rgb(12, 12, 12);
+    border: 2px solid rgb(148, 246, 2);
+    font-size: 15px;
+    cursor: pointer;
+
+  }
+  

@@ -5,7 +5,9 @@ let navbar = () => {
 
     return `
         <div class="announcement_bar">
-        <b class="cursor">Big savings on your favourite boAt products. Grab now!</b>
+            <a href="./offerPage.html">
+                <b class="cursor">Big savings on your favourite boAt products. Grab now!</b>
+            </a>
         </div>
                 <!-- Sticky Navbar Header Container  -->
         <div id="header_container" class="flex_display">
@@ -25,41 +27,63 @@ let navbar = () => {
                     </svg>
                 </a>
             </div>
-            <div id="header_icon_list" class="flex_display">
+            <div id="header_icon_list">
                 <div>
                     <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="">
-                    <input type="search" placeholder="Search...">
+                    <input id="search_one" type="search" placeholder="Search...">
                 </div>
                 <div class="user_details_icon flex_display">
-                    <a class="cursor">
-                        <svg focusable="false" width="18" height="17" viewBox="0 0 18 17">
-                            <circle cx="9" cy="5" r="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></circle>
-                            <path d="M1 17v0a4 4 0 014-4h8a4 4 0 014 4v0" fill="none" stroke="currentColor" stroke-width="2"></path>
-                        </svg>
-                    </a>
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon4.png?v=1655206048" alt="userIcon">
                     <a src="./giftcardPage.html" class="cursor">
-                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="giftIcon">
                     </a>
-                    <a class="cursor">
-                        <svg focusable="false" width="21" height="20" viewBox="0 0 21 20">
-                            <path d="M0 1H4L5 11H17L19 4H8" fill="none" stroke="currentColor" stroke-width="2"></path>
-                            <circle cx="6" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"></circle>
-                            <circle cx="16" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"></circle>
-                        </svg>
-                    </a>
-                </div>
+                    <img id="cart_icon" class="cursor" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon-3.png?v=1655206047" alt="cartIcon">
+                    <p id="cart_counter" class="cursor"></p>
+                    </div>
             </div>
         </div>
         <div id="search_box_container">
             <div>
                 <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="">
-                <input type="search" placeholder="Search...">
+                <input id="search_two" type="search" placeholder="Search...">
             </div>
         </div>
     `
 }
+            //  Popup Elements of Navbar link list title shop
 
-    //      Showing Popup for Navbar link list title shop
+let shopPopupElements = () => {
+    return `
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_540x.png?v=1612338251" alt="airdopes">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_540x.png?v=1612338387" alt="rokerz">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/pro_gear_720x.jpg?v=1648546494" alt="smartwatches">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/latest_background_b4f773ca-05d9-41cc-a7cf-3104993ae895_540x.png?v=1612338356" alt="wiredbassheads">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/box-5_540x.png?v=1612338436" alt="stonespeakers">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Collections_5baef8f1-a67a-40a5-a537-4258c6caae6a_540x.png?v=1622452897" alt="aavante">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/bence-boros-253214-unsplash_720x.jpg?v=1648545875" alt="mobileaccessories">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/New-Category-Banners_with-Trebal_09_720x.png?v=1615033153" alt="trebel">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-limited-edition_540x.png?v=1612338560" alt="limitededition">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_720x.png?v=1624859990" alt="misfit">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_720x.png?v=1626094103" alt="immortalgaming">
+    `
+}
+            //  Popup Elements of Navbar link list title More
+
+            let morePopupElements = () => {
+                return `
+                    <ul>
+                        <li><a href="./offerPage.html">Daily Deals</a></li>
+                        <li><a href="#">Gifting</a></li>
+                        <li><a href="#">Do What Floats Your boAt</a></li>
+                        <li><a href="#">Meet the boAtheads</a></li>
+                        <li><a href="#">Corporate Orders</a></li>
+                        <li><a href="#">Deal Rs.100</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                `
+            }
+
+    //      Popup Behaviour for Navbar link list title shop
 
 let linkShopPopup = () => {
         let timeId
@@ -102,7 +126,7 @@ let linkShopPopup = () => {
             }
         }
 }
-    //      Showing Popup for Navbar link list title More  -------
+    //      Popup Behaviour for Navbar link list title More  -------
 
 let linkMorePopup = () => {
 
@@ -153,17 +177,45 @@ let shopPopupCards = () => {
     for(let div of category){
 
         div.addEventListener("click",()=>{
-            window.location.href = "../productsPage.html"
+
+            let productsData = JSON.parse(localStorage.getItem("productsData"))||[]
+            let filteredData = productsData.filter((el) =>{
+                if(el.category===div.alt){
+                    return el;
+                }
+            })
+            localStorage.setItem("categorisedData",JSON.stringify(filteredData))
+            //window.location.href = "../productsPage.html"
         })
     }
 }
+        //      Cart Counter Function
+
+let cartCounter = (counterText, count) => {
+
+    let cartsData = JSON.parse(localStorage.getItem("cartsData"))
+    if(cartsData){
+        for(let count of cartsData){
+            counter++
+        }
+        counterText.innerText = count
+    }
+    else{
+        counterText.innerText = "0"
+    }
+
+}
+
             //  Input Searching Function
 
 let SearchQuery = () => {
+    let data = JSON.parse(localStorage.getItem("productsData"))
+    let searchData = data.filter((el)=> {
 
+    })
 
 }
 
 
 
-export { navbar, linkShopPopup, linkMorePopup, shopPopupCards, SearchQuery };
+export { navbar, linkShopPopup, linkMorePopup, shopPopupCards, shopPopupElements, morePopupElements, cartCounter, SearchQuery };

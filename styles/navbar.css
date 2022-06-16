@@ -2,6 +2,7 @@
 body{
     margin: 0px;
     background-color: #212529;
+    height: 1200px;
 }
 .cursor{
     cursor: pointer;
@@ -25,7 +26,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.announcement_bar>b{
+.announcement_bar>a>b{
     color: #FFFFFF;
     font-size: 17px;
     padding: 15px 0;
@@ -36,20 +37,22 @@ body{
             /*----------  Navbar Header Container  ------------*/
 
 #header_container{
-    padding: 11px 40px;
+    padding: 15px 40px;
 }
 #header_container>div{
     width: 27%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 100%;
 }
 #header_container>div:nth-child(2){
     justify-content: center;
 }
 .header_logo_image{
-    max-width: 85px;
-    margin: 10px 0px;
+    max-width: 105px;
+    height: 100%;
+    margin: 5px 0px;
 }
 div>a{
     text-decoration: none;
@@ -75,8 +78,13 @@ svg{
 #linklist_title_shop:hover,.linklist_title_offerZone:hover,#linklist_title_more:hover{
     text-decoration: underline;
 }
+#header_icon_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #header_icon_list>div:first-child,#search_box_container>div{
-    width: 60%;
+    width: 55%;
     display: flex;
     background-color: #FFFFFF;
     align-items: center;
@@ -105,10 +113,20 @@ svg{
     font-weight: 600;
     letter-spacing: 1px;
 }
-.user_details_icon>a>img{
+.user_details_icon>a>img,.user_details_icon>img{
     max-width: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#cart_counter{
+    color: white;
+    margin-left: -20px;
+    margin-top: -12px;
+    background-color: #ff0000!important;
+    border-radius: 100%;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: bold;
 }
             /*------  Navbar Linklist titles Popup elements ------*/
 
@@ -122,16 +140,13 @@ svg{
     padding: 30px;
     position: absolute;
 }
-#popup_link_list_shop>div{
-    max-width: 395px;
-}
-#popup_link_list_shop>div>img{
+#popup_link_list_shop>img{
     filter: brightness(125%);
-    width: 100%;
+    max-width: 385px;
     height: 100%;
 }
-#popup_link_list_shop>div>img:hover{
-    filter: brightness(100%);
+#popup_link_list_shop>img:hover{
+    filter: brightness(90%);
     transition: 0.50s;
 }
 #popup_link_list_more{
@@ -152,20 +167,17 @@ svg{
     color: rgb(171, 169, 169);
     transition: 0.25s;
 }
-
-
-
                 /*-----   Media Query For Navbar Container    ------*/
 
 @media all and (min-width: 451px) and (max-width: 950px) {
     .header_logo_image{
         max-width: 65px;
     }
-    #header_icon_list>div:first-child,.user_details_icon>a:first-child{
+    #header_icon_list>div:first-child,.user_details_icon>img:first-child{
         display: none;
     }
     #header_container>div:last-child{
-        width: 80px;
+        width: 90px;
     }
     #search_box_container{
         display: block;
@@ -196,5 +208,3 @@ svg{
         display: block;
     }
 }
-
-

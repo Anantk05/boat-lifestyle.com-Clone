@@ -1,3 +1,62 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    border: 0px;
+    color: rgb(198, 195, 191);
+}
+
+#pic1{
+      width: 100%;
+}
+
+#card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+    width: 70%;
+    height: 80%;
+    margin-top: 20px;
+    
+    
+}
+#card>div{
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 20px;
+    height: 290px;
+     
+}
+
+#all{
+    width: 100%;
+     
+}
+#cash{
+    font-size: 20px;
+    color: rgb(177, 185, 185);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tc{
+    font-size: 10px;
+   margin-left:   190px;
+   border: 1px solid rgb(136, 133, 133);
+   width: 40%;
+   margin-top: -30px;
+}
+#val{
+    margin-right: 250px;
+    font-size: 20px;
+    margin-top: 30px;font-weight: bold;
+    color: rgb(126, 124, 124);
+}
+
+#date{
+    margin-right: 220px;
+    margin-top: 20px;font-weight: bold;
+    font-size: 15px;
 }

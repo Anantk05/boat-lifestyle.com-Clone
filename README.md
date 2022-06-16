@@ -6,7 +6,7 @@
                     (Homepage and Navbar)
                     
     2.  Shaik Gouse Mohiddin
-                    (Login and Sugnup page)
+                    (Login and Signup page)
                     
     3.  Janhavi Prabhu
                     (Products Page)

@@ -1,7 +1,9 @@
 
 // Importing Navbar and footer HTML from Components
 
-import {navbar, linkShopPopup, linkMorePopup, shopPopupCards, shopPopupElements, morePopupElements, cartCounter, SearchQuery } from "../components/navbar.js";
+import {navbar, linkShopPopup, linkMorePopup, shopPopupCards, shopPopupElements, morePopupElements, cartCounter, searchQuery } from "../components/navbar.js";
+import productsData from "../components/productsData.js"
+productsData()
 
 //      appending navbar components
 
@@ -44,12 +46,10 @@ searchTermTwo.addEventListener("keypress", () => {
 })
 let search = (terms) => {
     if(event.key==="Enter"){
-
-        //SearchQuery()
-        console.log(terms)
+        
+        searchQuery(terms)
     }
 }
-
         //------ Homepage Mainbody Functionality --------------
 
     let slideShow = () => {
@@ -57,9 +57,9 @@ let search = (terms) => {
         let slideData = [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/135-WEB_2000x.jpg?v=1655189587",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/desktop-banner_2000x.png?v=1655295150",
-            "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/desktop-banner_2000x.png?v=1655295150",
-            "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2000x650_5496c9d9-c8d1-49c1-a7c2-83055a261f8a_1000x.jpg?v=1654509146"
-        ]
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/web34_0dc3ef24-e76e-4587-b21d-948137c138e3_2000x.jpg?v=1654670966",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2000x650_5496c9d9-c8d1-49c1-a7c2-83055a261f8a_1000x.jpg?v=1654509146",
+        ];
         let slide = document.getElementById("slide_show")
         let i = 0
         if(i===0){
@@ -69,7 +69,7 @@ let search = (terms) => {
             i++
         }
         setInterval(() => {
-            if(i===slideData.length-1){
+            if(i===slideData.length){
                 i=0
             }
             slide.innerHTML = null

@@ -2,3 +2,20 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+#mainbody_container{
+    background-color: black;
+}
+#slide_show{
+    max-height: 500px;
+    min-width: 100%;
+}
+#slide_show>img{
+    width: 100%;
+    transition: 0.25s;
+}
+.category_text{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 40px 0px 16px;
+}

@@ -1,0 +1,200 @@
+
+body{
+    margin: 0px;
+    background-color: #212529;
+}
+.cursor{
+    cursor: pointer;
+}
+.flex_display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+            /*--------  Navbar Announcement Bar  --------*/
+#navbar_container{
+    position: sticky;
+    top: -51px;
+    background-color: black;
+}
+.announcement_bar{
+    background-color: #ff0000;
+    max-height: 40px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.announcement_bar>b{
+    color: #FFFFFF;
+    font-size: 17px;
+    padding: 15px 0;
+    letter-spacing: .5px;
+    font-weight: bolder;
+    text-align: center;
+}
+            /*----------  Navbar Header Container  ------------*/
+
+#header_container{
+    padding: 11px 40px;
+}
+#header_container>div{
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+#header_container>div:nth-child(2){
+    justify-content: center;
+}
+.header_logo_image{
+    max-width: 85px;
+    margin: 10px 0px;
+}
+div>a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 19px;
+}
+.linklist_title_offerZone{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#linklist_title_shop,#linklist_title_more{
+    display: inline-block;
+}
+.rotation{
+    transform: rotateZ(90deg);
+    margin-left: 5px;
+
+}
+svg{
+    color: white
+}
+#linklist_title_shop:hover,.linklist_title_offerZone:hover,#linklist_title_more:hover{
+    text-decoration: underline;
+}
+#header_icon_list>div:first-child,#search_box_container>div{
+    width: 60%;
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    padding: 11px 20px;
+    border-radius: 2em;
+}
+#search_box_container{
+    display: none;
+    padding-bottom: 10px;
+}
+#search_box_container>div{
+    width: 92%;
+    margin: auto;
+}
+#header_icon_list>div:first-child>img,#search_box_container>div>img{
+    width: 15px;
+    height: 15px;
+}
+#header_icon_list>div>input,#search_box_container>div>input{
+    outline: 0;
+    border: 0;
+    width: 100%;
+    font-size: 19px;
+    line-height: 1.2rem;
+    padding:  2px 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.user_details_icon>a>img{
+    max-width: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+            /*------  Navbar Linklist titles Popup elements ------*/
+
+#popup_link_list_shop{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: black;
+    border: 2px solid #212529;
+    padding: 30px;
+    position: absolute;
+}
+#popup_link_list_shop>div{
+    max-width: 395px;
+}
+#popup_link_list_shop>div>img{
+    filter: brightness(125%);
+    width: 100%;
+    height: 100%;
+}
+#popup_link_list_shop>div>img:hover{
+    filter: brightness(100%);
+    transition: 0.50s;
+}
+#popup_link_list_more{
+    background-color: black;
+    width: 275px;
+    border: 2px solid #212529;
+    margin-left: 50%;
+    display: none;
+    position: absolute;
+}
+#popup_link_list_more>ul>li,#popup_link_list_more>ul>li>a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+#popup_link_list_more>ul>li>a:hover{
+    color: rgb(171, 169, 169);
+    transition: 0.25s;
+}
+
+
+
+                /*-----   Media Query For Navbar Container    ------*/
+
+@media all and (min-width: 451px) and (max-width: 950px) {
+    .header_logo_image{
+        max-width: 65px;
+    }
+    #header_icon_list>div:first-child,.user_details_icon>a:first-child{
+        display: none;
+    }
+    #header_container>div:last-child{
+        width: 80px;
+    }
+    #search_box_container{
+        display: block;
+    }
+}
+@media all and (min-width: 101px) and (max-width: 450px) {
+    .header_logo_image{
+        max-width: 65px;
+    }
+    #header_container{
+        padding: 5px 10px;
+    }
+    #header_icon_list>div:first-child,.user_details_icon>a:first-child{
+        display: none;
+    }
+    #header_container>div:last-child{
+        width: 80px;
+    }
+    .linklist_title_offerZone{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .user_details_icon>a>img{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #search_box_container{
+        display: block;
+    }
+}
+
+

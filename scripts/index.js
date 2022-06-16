@@ -4,8 +4,7 @@
 import {navbar, linkShopPopup, linkMorePopup, shopPopupCards, shopPopupElements, morePopupElements, cartCounter, searchQuery } from "../components/navbar.js";
 import productsData from "../components/productsData.js"
 productsData()
-let dat = JSON.parse(localStorage.getItem("productsData"))
-console.log(dat)
+
 //      appending navbar components
 
 document.getElementById("navbar_container").innerHTML = navbar()

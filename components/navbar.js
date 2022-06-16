@@ -185,7 +185,7 @@ let shopPopupCards = () => {
                 }
             })
             localStorage.setItem("categorisedData",JSON.stringify(filteredData))
-            //window.location.href = "../productsPage.html"
+            window.location.href = "../productsPage.html"
         })
     }
 }
@@ -196,7 +196,7 @@ let cartCounter = (counterText, count) => {
     let cartsData = JSON.parse(localStorage.getItem("cartsData"))
     if(cartsData){
         for(let count of cartsData){
-            counter++
+            count++
         }
         counterText.innerText = count
     }
@@ -208,14 +208,19 @@ let cartCounter = (counterText, count) => {
 
             //  Input Searching Function
 
-let SearchQuery = () => {
+let searchQuery = (terms) => {
     let data = JSON.parse(localStorage.getItem("productsData"))
     let searchData = data.filter((el)=> {
-
+        let name = el.name.toUpperCase()
+        if(name.includes(terms.toUpperCase())){
+            return el;
+        }
     })
+    console.log(searchData)
+    
 
 }
 
 
 
-export { navbar, linkShopPopup, linkMorePopup, shopPopupCards, shopPopupElements, morePopupElements, cartCounter, SearchQuery };
+export { navbar, linkShopPopup, linkMorePopup, shopPopupCards, shopPopupElements, morePopupElements, cartCounter, searchQuery };

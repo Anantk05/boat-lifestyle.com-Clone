@@ -1,7 +1,7 @@
 
 // Importing Navbar and footer HTML from Components
 
-import {navbar, linkShopPopup, linkMorePopup, shopPopupCards, shopPopupElements, morePopupElements, cartCounter, SearchQuery } from "../components/navbar";
+import {navbar, linkShopPopup, linkMorePopup, shopPopupCards, shopPopupElements, morePopupElements, cartCounter, SearchQuery } from "../components/navbar.js";
 
 //      appending navbar components
 

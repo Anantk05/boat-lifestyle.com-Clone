@@ -2,7 +2,9 @@
 // Import Navbar and footer HTML from Components
 
 
-import {navbar} from "../components/navbar.js";
+import {
+  navbar,
+} from "../components/navbar.js";
 
 document.getElementById("navbar_container").innerHTML = navbar();
 
@@ -984,7 +986,7 @@ let data = [
 ];
 
 
-let productdetails = JSON.parse(localStorage.getItem("detailsOfProduct"));
+let productdetails = JSON.parse(localStorage.getItem("detailsOfProduct"))|| [];
 localStorage.setItem("productsdata", JSON.stringify(data));
 var cartdata = JSON.parse(localStorage.getItem("cartsData")) || [];
 
@@ -1072,9 +1074,34 @@ function display(data) {
 display(data);
 
 function addtoCart(ele) {
+  if (cartdata!=false){
+    var check =false;
+
+    for (var i=0;i<cartdata.length;i++){
+      if(ele.name==cartdata[i].name){
+        check=true;
+        break;
+
+      }
+     
+    }
+    if (check){
+      alert("This product is already added..!")
+    }
+    else{
+      cartdata.push(ele);
+      localStorage.setItem("cartsData", JSON.stringify(cartdata));
+      alert("Product added successfully.")
+    }
+  }
+  else{
+
   cartdata.push(ele);
 
   localStorage.setItem("cartsData", JSON.stringify(cartdata));
+  alert("Product added successfully.");
+  
+  }
 }
 
 function onclick(ele) {

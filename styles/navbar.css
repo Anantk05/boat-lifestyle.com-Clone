@@ -189,22 +189,35 @@ svg{
     #header_container{
         padding: 5px 10px;
     }
-    #header_icon_list>div:first-child,.user_details_icon>a:first-child{
+    #header_icon_list>div:first-child,.user_details_icon>img:first-child{
         display: none;
     }
+    #header_container>div{
+        display: flex;
+        justify-content: space-evenly;
+    }
     #header_container>div:last-child{
-        width: 80px;
+        max-width: 50px;
     }
     .linklist_title_offerZone{
         margin-left: 15px;
         margin-right: 15px;
     }
     .user_details_icon>a>img{
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 0px;
+        margin-right: -5px;
     }
     #search_box_container{
         display: block;
+    }
+    #cart_counter{
+        color: white;
+        margin-left: -20px;
+        margin-top: -12px;
+        background-color: #ff0000!important;
+        border-radius: 100%;
+        padding: 3px 5px;
+        font-size: 8px;
     }
 }
 

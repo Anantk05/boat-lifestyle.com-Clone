@@ -787,17 +787,17 @@ let productsData = () => {
           color: "Aztec Fusion",
           save: " 50%",
         },
-        {
-          image:
-            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/190im_200x.png?v=1639989652",
-          name: "boAt Stone 190-IronMan",
-          price: "2999",
-          discountPrice: "1999",
-          yousave: "2999" - "1999" + " (57%)",
-          category: "LimitedEdition",
-          color: "Iron Red",
-          save: " 57%",
-        },
+        // {
+        //   image:
+        //     "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/190im_200x.png?v=1639989652",
+        //   name: "boAt Stone 190-IronMan",
+        //   price: "2999",
+        //   discountPrice: "1999",
+        //   yousave: "2999" - "1999" + " (57%)",
+        //   category: "WirelessHeadphones",
+        //   color: "Iron Red",
+        //   save: " 57%",
+        // },
         {
           image:
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/190a_400x.png?v=1640070142",

@@ -2,25 +2,14 @@
 // Import Navbar and footer HTML from Components
 
 
+import {
+  navbar,
+} from "../components/navbar.js";
+
+document.getElementById("navbar_container").innerHTML = navbar();
 
 
-
-
-
-// ---function of add to cart--//
-
-// let addtoCart=()=>{
-//     var details=[]
-
-//     function Data(img,name,price){
-//         this.img=img;
-//         this.name=name;
-//         this.price=price;
-//     }
-
-//     img=document.getElementById
-// }
-
+// ----all products data--// start here---|
 
 
 
@@ -29,13 +18,15 @@ let data = [
   {
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/cream_600x.png?v=1642405569",
-    name: "boAt Airdopes 131 - Wireless Earbuds",
+    name: "boAt Airdopes 131",
     price: "2990",
     discountPrice: "999",
     yousave: "2990" - "999" + " (67%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "CrimsonCream",
     save: " 67%",
+    banner:
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes_Catgry-web_7cf20899-eb4a-427f-9a8a-799d7e1c37fa.jpg?v=1634716734",
   },
   {
     image:
@@ -45,9 +36,11 @@ let data = [
     price: "2990",
     discountPrice: "1699",
     yousave: "2990" - "1639" + " (60%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Black",
     save: " 60%",
+    banner:
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz-_Catgry_web_d201c6e3-e067-4280-a127-56a2e1b51399.jpg?v=1634806683",
   },
   {
     image:
@@ -56,7 +49,7 @@ let data = [
     price: "4490",
     discountPrice: "1499",
     yousave: "4900" - "1499" + " (67%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 67%",
   },
@@ -68,9 +61,11 @@ let data = [
     price: "999",
     discountPrice: "333",
     yousave: "999" - "333" + " (60%)",
-    category: "WiredEarphones",
+    category: "Wired Earphones",
     color: "Mint Orange",
     save: " 60%",
+    banner:
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Bassheads-_Catgry_web.jpg?v=1634717143",
   },
   {
     image:
@@ -79,7 +74,7 @@ let data = [
     price: "7990",
     discountPrice: "3199",
     yousave: "7990" - "3199" + " (60%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Pitch Black",
     save: " 60%",
   },
@@ -90,7 +85,7 @@ let data = [
     price: "4999",
     discountPrice: "1999",
     yousave: "4999" - "1999" + " (60%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Red",
     save: " 60%",
   },
@@ -101,7 +96,7 @@ let data = [
     price: "11999",
     discountPrice: "4399",
     yousave: "11999" - "4399" + " (56%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Sporty Blue",
     save: " 56%",
   },
@@ -112,7 +107,7 @@ let data = [
     price: "6990",
     discountPrice: "3999",
     yousave: "6990" - "3999" + " (51%)",
-    category: "WirelessSpeakers",
+    category: "Wireless Speakers",
     color: "Blue",
     save: " 51%",
   },
@@ -123,7 +118,7 @@ let data = [
     price: "4,490",
     discountPrice: "1499",
     yousave: "4490" - "1499" + " (67%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "White",
     save: " 67%",
   },
@@ -134,7 +129,7 @@ let data = [
     price: "6990",
     discountPrice: "2499",
     yousave: "6990" - "2499" + " (56%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Black",
     save: " 56%",
   },
@@ -145,7 +140,7 @@ let data = [
     price: "3499",
     discountPrice: "1499",
     yousave: "3499" - "1499" + " (57%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Blue",
     save: " 57%",
   },
@@ -156,7 +151,7 @@ let data = [
     price: "2990",
     discountPrice: "1299",
     yousave: "2990" - "1299" + " (57%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Pink",
     save: " 57%",
   },
@@ -167,7 +162,7 @@ let data = [
     price: "2990",
     discountPrice: "1999",
     yousave: "2990" - "1999" + " (56%)",
-    category: "WirelessSpeakers",
+    category: "Wireless Speakers",
     color: "Black",
     save: " 56%",
   },
@@ -178,7 +173,7 @@ let data = [
     price: "6990",
     discountPrice: "2499",
     yousave: "6990" - "2499" + " (64%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Black",
     save: " 64%",
   },
@@ -189,7 +184,7 @@ let data = [
     price: "2490",
     discountPrice: "849",
     yousave: "2490" - "849" + " (66%)",
-    category: "WiredEarphones",
+    category: "Wired Earphones",
     color: "Black",
     save: " 66%",
   },
@@ -200,7 +195,7 @@ let data = [
     price: "2999",
     discountPrice: "1299",
     yousave: "2999" - "1299" + " (57%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 57%",
   },
@@ -211,7 +206,7 @@ let data = [
     price: "6990",
     discountPrice: "3399",
     yousave: "6990" - "3399" + " (51%)",
-    category: "WirelessSpeakers",
+    category: "Wireless Speakers",
     color: "Orange",
     save: " 51%",
   },
@@ -222,7 +217,7 @@ let data = [
     price: "6990",
     discountPrice: "3499",
     yousave: "6990" - "3499" + " (50%)",
-    category: "",
+    category: "Wireless Speakers",
     color: "Black",
     save: " 50%",
   },
@@ -233,29 +228,29 @@ let data = [
     price: "5990",
     discountPrice: "2899",
     yousave: "5990" - "2899" + " (52%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Black",
     save: " 52%",
   },
   {
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2e056443-6505-46ef-aa88-e20e2778b0a9_400x.png?v=1625046016",
-    name: "boAt Airdopes 441 - Wireless Earbuds",
+    name: "boAt Airdopes 441 Wireless Earbuds",
     price: "5999",
     discountPrice: "2499",
     yousave: "5999" - "2499" + " (58%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 58",
   },
   {
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ltg1_400x.png?v=1623813149",
-    name: "boAt 500 Apple Certified Lightning Cable 1 Meter",
+    name: "boAt 500 Cable 1 Meter",
     price: "1499",
     discountPrice: "599",
     yousave: "1499" - "599" + " (56%)",
-    category: "MobileAccessories",
+    category: "Mobile Accessories",
     color: "Black",
     save: " 56%",
   },
@@ -266,7 +261,7 @@ let data = [
     price: "2990",
     discountPrice: "1499",
     yousave: "2990" - "1499" + " (50%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 50%",
   },
@@ -277,18 +272,18 @@ let data = [
     price: "7990",
     discountPrice: "3499",
     yousave: "7990" - "3499" + " (56%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Sandy Cream",
     save: " 56%",
   },
   {
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/86b7c390-4a4b-45d7-91e1-65007653b71e_600x.png?v=1625045261",
-    name: "boAt Airdopes 381 In Ear Wireless Earbuds",
+    name: "boAt Airdopes 381 Wireless Earbuds",
     price: "4990",
     discountPrice: "1599",
     yousave: "4990" - "1599" + " (68%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 68%",
   },
@@ -299,18 +294,18 @@ let data = [
     price: "2490",
     discountPrice: "799",
     yousave: "2499" - "799" + " (63%)",
-    category: "MobileAccessories",
+    category: "Mobile Accessories",
     color: "Indi Silver",
     save: " 63%",
   },
   {
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/6875f924-20d3-4cb6-933d-5319504c7baa_600x.png?v=1625046269",
-    name: "boAt 3A Qualcomm Turbo Car Charger",
+    name: "boAt 3A Turbo Car Charger",
     price: "999",
     discountPrice: "499",
     yousave: "999" - "499" + " (56%)",
-    category: "MobileAccessories",
+    category: "Mobile Accessories",
     color: "Black",
     save: " 56%",
   },
@@ -321,7 +316,7 @@ let data = [
     price: "2490",
     discountPrice: "899",
     yousave: "2490" - "899" + " (64%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Black",
     save: " 64%",
   },
@@ -332,7 +327,7 @@ let data = [
     price: "5999",
     discountPrice: "1,999",
     yousave: "5999" - "1999" + " (67%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 67%",
   },
@@ -343,18 +338,18 @@ let data = [
     price: "499",
     discountPrice: "299",
     yousave: "499" - "299" + " (40%)",
-    category: "MobileAccessories",
+    category: "Mobile Accessories",
     color: "Indi Silver",
     save: " 40%",
   },
   {
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bassheads-100-make-in-india-green_600x.png?v=1613457339",
-    name: "boAt BassHeads 100 - Made in India",
+    name: "boAt BassHeads 100 Made in India",
     price: "999",
     discountPrice: "399",
     yousave: "999" - "399" + " (60%)",
-    category: "WiredEarphones",
+    category: "Wired Earphones",
     color: "Green",
     save: " 60%",
   },
@@ -365,7 +360,7 @@ let data = [
     price: "999",
     discountPrice: "555",
     yousave: "999" - "555" + " (40%)",
-    category: "WiredEarphones",
+    category: "Wired Earphones",
     color: "Orange",
     save: " 40%",
   },
@@ -376,7 +371,7 @@ let data = [
     price: "4990",
     discountPrice: "1899",
     yousave: "4990" - "1899" + " (62%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 62%",
   },
@@ -387,7 +382,7 @@ let data = [
     price: "4999",
     discountPrice: "1999",
     yousave: "4999" - "1999" + " (56%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Black",
     save: " 56%",
   },
@@ -398,7 +393,7 @@ let data = [
     price: "1990",
     discountPrice: "999",
     yousave: "1990" - "999" + " (56%)",
-    category: "WiredEarphones",
+    category: "Wired Earphones",
     color: "Blue",
     save: " 56%",
   },
@@ -409,7 +404,7 @@ let data = [
     price: "4990",
     discountPrice: "1999",
     yousave: "4990" - "1999" + " (60%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "GreenishBlue",
     save: " 60%",
   },
@@ -420,7 +415,7 @@ let data = [
     price: "6990",
     discountPrice: "3999",
     yousave: "6990" - "3999" + " (56%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Blue",
     save: " 56%",
   },
@@ -431,7 +426,7 @@ let data = [
     price: "1290",
     discountPrice: "449",
     yousave: "1290" - "449" + " (65%)",
-    category: "WiredEarphones",
+    category: "Wired Earphones",
     color: "Black",
     save: " 65%",
   },
@@ -442,7 +437,7 @@ let data = [
     price: "1290",
     discountPrice: "449",
     yousave: "1290" - "449" + " (56%)",
-    category: "WiredEarphones",
+    category: "Wired Earphones",
     color: "Navy Blue",
     save: " 56%",
   },
@@ -453,7 +448,7 @@ let data = [
     price: " 5990",
     discountPrice: "1699",
     yousave: "5990" - "1699" + " (72%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 72%",
   },
@@ -464,7 +459,7 @@ let data = [
     price: "8990",
     discountPrice: "4499",
     yousave: "4499" - "8990" + " (50%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Blue",
     save: " 50%",
   },
@@ -475,7 +470,7 @@ let data = [
     price: "1290",
     discountPrice: "499",
     yousave: "1290" - "499" + " (65%)",
-    category: "WiredEarphones",
+    category: "Wired Earphones",
     color: "Black",
     save: " 65%",
   },
@@ -486,7 +481,7 @@ let data = [
     price: "2990",
     discountPrice: "1599",
     yousave: "2990" - "1599" + " (47%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Blue",
     save: " 47%",
   },
@@ -497,7 +492,7 @@ let data = [
     price: "1999",
     discountPrice: "949",
     yousave: "1999" - "949" + " (53%)",
-    category: "MobileAccessories",
+    category: "Mobile Accessories",
     color: "Midnight Blue",
     save: " 53%",
   },
@@ -508,7 +503,7 @@ let data = [
     price: "3990",
     discountPrice: "1499",
     yousave: "3990" - "1499" + " (62%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Light Blue",
     save: " 62%",
   },
@@ -519,7 +514,7 @@ let data = [
     price: "6990",
     discountPrice: "2999",
     yousave: "6990" - "2999" + " (57%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Black",
     save: " 57%",
   },
@@ -530,7 +525,7 @@ let data = [
     price: "3990",
     discountPrice: "1799",
     yousave: "3990" - "1799" + " (56%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Sandybrown",
     save: " 56%",
   },
@@ -541,7 +536,7 @@ let data = [
     price: " 2990",
     discountPrice: "1699",
     yousave: "2990" - "1699" + " (43%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 43%",
   },
@@ -552,7 +547,7 @@ let data = [
     price: "6990",
     discountPrice: "2999",
     yousave: "6990" - "2999" + " (57%)",
-    category: "",
+    category: "Smart Watches",
     color: "Black",
     save: " 57%",
   },
@@ -563,7 +558,7 @@ let data = [
     price: "6990",
     discountPrice: "3119",
     yousave: "6990" - "3119" + " (54%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Green",
     save: " 54%",
   },
@@ -574,7 +569,7 @@ let data = [
     price: "1990",
     discountPrice: "999",
     yousave: "1990" - "999" + " (56%)",
-    category: "MobileAccessories",
+    category: "Mobile Accessories",
     color: "Black",
     save: " 56%",
   },
@@ -585,7 +580,7 @@ let data = [
     price: "2999",
     discountPrice: "1499",
     yousave: "2999" - "1499" + " (56%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Olivedrab",
     save: " 56%",
   },
@@ -596,7 +591,7 @@ let data = [
     price: "5999",
     discountPrice: "2999",
     yousave: "5999" - "2999" + " (50%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Unique Blue",
     save: " 50%",
   },
@@ -608,7 +603,7 @@ let data = [
     price: "6990",
     discountPrice: "2299",
     yousave: "6990" - "2299" + " (67%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Grey",
     save: " 67%",
   },
@@ -619,7 +614,7 @@ let data = [
     price: "9990",
     discountPrice: "3999",
     yousave: "9990" - "3999" + " (50%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 50%",
   },
@@ -630,7 +625,7 @@ let data = [
     price: "1990",
     discountPrice: "1199",
     yousave: "1990" - "1199" + " (56%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Blue",
     save: " 56%",
   },
@@ -641,7 +636,7 @@ let data = [
     price: "6990",
     discountPrice: "1999",
     yousave: "6990" - "1999" + " (71%)",
-    category: "SmartWatches",
+    category: "Smart Watches",
     color: "Silver",
     save: " 71%",
   },
@@ -652,7 +647,7 @@ let data = [
     price: "3490",
     discountPrice: "1499",
     yousave: "3490" - "1499" + " (60%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Red",
     save: "60%",
   },
@@ -663,7 +658,7 @@ let data = [
     price: "2990",
     discountPrice: "1299",
     yousave: "2990" - "1299" + " (57%)",
-    category: "WirelessSpeakers",
+    category: "Wireless Speakers",
     color: "Black",
     save: " 57%",
   },
@@ -675,7 +670,7 @@ let data = [
     price: "1490",
     discountPrice: "599",
     yousave: "1490" - "599" + " (56%)",
-    category: "WiredEarphones",
+    category: "Wired Earphones",
     color: "Blue",
     save: " 56%",
   },
@@ -686,7 +681,7 @@ let data = [
     price: "2499",
     discountPrice: "999",
     yousave: "2499" - "999" + " (56%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Red",
     save: " 56%",
   },
@@ -697,7 +692,7 @@ let data = [
     price: "3990",
     discountPrice: "14999",
     yousave: "3990" - "1499" + " (62%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Navy Blue",
     save: " 62%",
   },
@@ -708,7 +703,7 @@ let data = [
     price: "7990",
     discountPrice: "3999",
     yousave: "7990" - "3999" + " (50%)",
-    category: "WirelessSpeakers",
+    category: "Wireless Speakers",
     color: "Black",
     save: " 50%",
   },
@@ -719,7 +714,7 @@ let data = [
     price: "3990",
     discountPrice: "1999",
     yousave: "3990" - "1999" + " (50%)",
-    category: "WirelessSpeakers",
+    category: "Wireless Speakers",
     color: "Blue",
     save: " 59%",
   },
@@ -730,7 +725,7 @@ let data = [
     price: "2490",
     discountPrice: "1499",
     yousave: "2490" - "1499" + " (56%)",
-    category: "WirelessSpeakers",
+    category: "Wireless Speakers",
     color: "Gray",
     save: " 56%",
   },
@@ -741,7 +736,7 @@ let data = [
     price: "2490",
     discountPrice: "1499",
     yousave: "2490" - "1499" + " (56%)",
-    category: "WirelessSpeakers",
+    category: "Wireless Speakers",
     color: "SteelBlue",
     save: " 56%",
   },
@@ -752,7 +747,7 @@ let data = [
     price: "3990",
     discountPrice: "1999",
     yousave: "3990" - "1999" + " (50%)",
-    category: "LimitedEdition",
+    category: "Limited Edition",
     color: "Blue",
     save: " 50%",
   },
@@ -763,7 +758,7 @@ let data = [
     price: "4999",
     discountPrice: "2499",
     yousave: "4999" - "2499" + " (50%)",
-    category: "",
+    category: "Limited Edition",
     color: "Purple",
     save: " 50%",
   },
@@ -774,7 +769,7 @@ let data = [
     price: "4999",
     discountPrice: "1999",
     yousave: "4999" - "1999" + " (56%)",
-    category: "LimitedEdition",
+    category: "Limited Edition",
     color: "BlueYellow",
     save: " 56%",
   },
@@ -785,7 +780,7 @@ let data = [
     price: "899",
     discountPrice: "499",
     yousave: "899" - "499" + " (56%)",
-    category: "LimitedEdition",
+    category: "Limited Edition",
     color: "Blue",
     save: " 56%",
   },
@@ -796,7 +791,7 @@ let data = [
     price: "3990",
     discountPrice: "1999",
     yousave: "3990" - "1999" + " (50%)",
-    category: "LimitedEdition",
+    category: "Limited Edition",
     color: "White",
     save: " 50%",
   },
@@ -807,7 +802,7 @@ let data = [
     price: "5999",
     discountPrice: "2499",
     yousave: "5999" - "2499" + " (50%)",
-    category: "LimitedEdition",
+    category: "Limited Edition",
     color: "Aztec Fusion",
     save: " 50%",
   },
@@ -818,7 +813,7 @@ let data = [
     price: "2999",
     discountPrice: "1999",
     yousave: "2999" - "1999" + " (57%)",
-    category: "LimitedEdition",
+    category: "Limited Edition",
     color: "Iron Red",
     save: " 57%",
   },
@@ -829,7 +824,7 @@ let data = [
     price: "2999",
     discountPrice: "1299",
     yousave: "2999" - "1299" + " (56%)",
-    category: "LimitedEdition",
+    category: "Limited Edition",
     color: "Blue",
     save: " 56%",
   },
@@ -840,7 +835,7 @@ let data = [
     price: "4990",
     discountPrice: "2499",
     yousave: "4990" - "" + " (50%)",
-    category: "LimitedEdition",
+    category: "Limited Edition",
     color: "Purple",
     save: " 50%",
   },
@@ -851,7 +846,7 @@ let data = [
     price: "2990",
     discountPrice: "1299",
     yousave: "2990" - "1299" + " (56%)",
-    category: "LimitedEdition",
+    category: "Limited Edition",
     color: "Purple",
     save: " 56%",
   },
@@ -906,7 +901,7 @@ let data = [
     price: "9990",
     discountPrice: "3999",
     yousave: "9990" - "3999" + " (60%)",
-    category: "WirelessEarbuds",
+    category: "Wireless Earbuds",
     color: "Black",
     save: " 60%",
   },
@@ -918,7 +913,7 @@ let data = [
     price: "8990",
     discountPrice: "4999",
     yousave: "8990" - "4999" + " (44%)",
-    category: "WirelessSpeakers",
+    category: "Wireless Speakers",
     color: "Green",
     save: " 44%",
   },
@@ -940,7 +935,7 @@ let data = [
     price: "599",
     discountPrice: "349",
     yousave: "599" - "349" + " (42%)",
-    category: "MobileAccessories",
+    category: "Mobile Accessories",
     color: "Gold",
     save: " 42%",
   },
@@ -951,7 +946,7 @@ let data = [
     price: "1299",
     discountPrice: "549",
     yousave: "1299" - "549" + " (60%)",
-    category: "MobileAccessories",
+    category: "Mobile Accessories",
     color: "Black",
     save: " 60%",
   },
@@ -962,7 +957,7 @@ let data = [
     price: "899",
     discountPrice: "499",
     yousave: "899" - "499" + " (50%)",
-    category: "MobileAccessories",
+    category: "Mobile Accessories",
     color: "Red",
     save: " 50%",
   },
@@ -973,7 +968,7 @@ let data = [
     price: "1490",
     discountPrice: "449",
     yousave: "1490" - "499" + " (70%)",
-    category: "WiredEarphones",
+    category: "Wired Earphones",
     color: "Black",
     save: " 70%",
   },
@@ -984,14 +979,14 @@ let data = [
     price: "7990",
     discountPrice: "3999",
     yousave: "7990" - "3999" + " (50%)",
-    category: "WirelessHeadphones",
+    category: "Wireless Headphones",
     color: "Sterling Silver",
     save: " 50%",
   },
 ];
 
 
-let productdetails = JSON.parse(localStorage.getItem("detailsOfProduct"));
+let productdetails = JSON.parse(localStorage.getItem("detailsOfProduct"))|| [];
 localStorage.setItem("productsdata", JSON.stringify(data));
 var cartdata = JSON.parse(localStorage.getItem("cartsData")) || [];
 
@@ -1064,6 +1059,7 @@ function display(data) {
     let btn = document.createElement("button");
     btn.innerText = "ADD TO CART";
     btn.style.cursor = "pointer";
+    btn.setAttribute("id","cartbutton")
     btn.addEventListener("click", function () {
       addtoCart(ele);
     });
@@ -1078,9 +1074,34 @@ function display(data) {
 display(data);
 
 function addtoCart(ele) {
+  if (cartdata!=false){
+    var check =false;
+
+    for (var i=0;i<cartdata.length;i++){
+      if(ele.name==cartdata[i].name){
+        check=true;
+        break;
+
+      }
+     
+    }
+    if (check){
+      alert("This product is already added..!")
+    }
+    else{
+      cartdata.push(ele);
+      localStorage.setItem("cartsData", JSON.stringify(cartdata));
+      alert("Product added successfully.")
+    }
+  }
+  else{
+
   cartdata.push(ele);
 
   localStorage.setItem("cartsData", JSON.stringify(cartdata));
+  alert("Product added successfully.");
+  
+  }
 }
 
 function onclick(ele) {
@@ -1096,11 +1117,21 @@ Featured.addEventListener("change", myfun2);
 function myfun2() {
   if (Featured.value == "Featured") {
     display(data);
+    
+
+ document.getElementById("h1").innerText = Featured.value;
+ document.getElementById("productvise").innerText="/ "+ Featured.value;
+ 
+   
   } else {
     let filtered = data.filter(function (ele) {
-      return ele.category == Featured.value;
+      return ele.category == Featured.value; 
     });
     display(filtered);
+
+    document.getElementById("h1").innerText = Featured.value;
+    document.getElementById("productvise").innerText = "/ " + Featured.value;
+    
   }
 }
 

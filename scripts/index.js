@@ -6,7 +6,11 @@ import footer from "../components/footer.js";
 
 import productsData from "../components/productsData.js"
 productsData()
+<<<<<<< HEAD
 let data = JSON.parse(localStorage.getItem("productsData"))
+=======
+
+>>>>>>> 75d60490769b98e30c134e901ba80691efd176c3
 //      appending navbar components
 
 document.getElementById("navbar_container").innerHTML = navbar()

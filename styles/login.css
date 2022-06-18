@@ -20,7 +20,7 @@ a{
     text-decoration: none;
     color:  grey
 }
-input{
+form>input,#password{
     padding: 10px;
     margin-top: 10px;
     background-color: rgb(64, 63, 63);
@@ -68,12 +68,12 @@ input[type=submit]:hover {
   #popup{
     text-align: center;
     border-radius: 50px;
-    border: 7px solid red;
+    border: 5px solid red;
     padding:  10px 10px;
     width: 200px;
-    height: 270px;
+    height: 250px;
     transform: translate(-50%,50%)scale(2);
-    top: 4%;
+    top: 20%;
     left: 50%;
     position: absolute;
     background-color: rgb(79, 103, 103);

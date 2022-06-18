@@ -19,14 +19,14 @@ form{
     margin-left: 600px;
 
 }
-input{
+form>input,#password{
     padding: 10px ;
     margin-top: 10px;
     border-radius: 13px;
     border: 1px solid rgb(167, 164, 164);
     width: 350px;
     height: 35px;
-    background-color: rgb(64, 63, 63);
+    background-color: rgb(223, 219, 219);
 }
 a{
     text-decoration: none;

@@ -1,0 +1,74 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mainBody>div>h1{
+    text-align: center;
+    color: white;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 35px;
+}
+.para{
+    text-align: center;
+     
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 25px;
+    color: #FFFFFF;
+}
+form{
+    width: 600px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+form>input,#password{
+    padding: 10px ;
+    margin-top: 10px;
+    border-radius: 13px;
+    border: 1px solid rgb(167, 164, 164);
+    width: 350px;
+    height: 35px;
+    background-color: rgb(223, 219, 219);
+    display: block;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+body{
+    margin: 0px;
+    border: 0px;
+     background-color: #212529;
+}
+input[type=submit] {
+    width: 28em;  height: 3em;
+    border: 0px;
+    border-radius: 13px;
+    color: white;
+}
+input[type=submit]:hover {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    
+}
+#log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+    gap: 7px;
+}
+#fb{
+    height: 40px;
+    width: 40px;
+    
+}
+#goo{
+    height: 40px;
+    width: 40px;
+    border-radius: 60px;
+     
+}

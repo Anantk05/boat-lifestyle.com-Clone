@@ -1,0 +1,273 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<1st box>>>>>>>>>>>>>>>>>>>>>>>>> */
+#cartdiv{
+    /* border: 1px solid green; */
+    background-color: white;
+    position:fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    padding: 0px 10px;
+    /* height: 850px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    height: 100%;
+    display:none; 
+     flex-direction: column;
+    
+}
+#yourcart{
+    height: 98%;
+    width: 100%;
+}
+.inner_your_cart{
+    width: 50%;
+    display: flex;
+    background-color: red;
+}
+#redcart{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+#countcart{
+    margin-top: 10px;
+    font-size: 18px;
+}
+#xclose{
+    margin-top: 10px;
+   font-size: 20px;
+   margin-left: 80%;
+   background-color: red;
+   color: white;
+   border: none;
+   
+}
+#red_cart{
+    display: flex;
+}
+
+/*<<<<<< <<<<<<<<<<<<<<2nd box headline>>>>>>>>>>>>>>>>>>>>>>> */
+#headline{
+    background-color:black;
+    height: 40px;
+    /* padding: 1% 1% 1% 1%; */
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left:3%;
+    padding-right: 1%;
+   overflow: hidden;
+}
+*{
+    color: white;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<empty cart or SHOPING BUTTON>>>>>>>>>>>>>>> */
+
+ #empty_cart{
+     /* border: 2px solid skyblue; */
+     width: 70%;
+     height: 150px;
+     margin: auto;
+     margin-top: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+ }
+ #content{
+     color: black;
+     text-align: center;
+     margin-top: 30px;
+ }
+ #startShoping{
+     background-color: red;
+     border-radius: 8px;
+     border: none;
+     height: 60px;
+     margin-left:22%;
+     width: 150px;
+ }
+ a{
+    text-decoration: none;
+     
+ }
+ 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<fullbox style>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#productArea{
+/* border: 1px solid red; */
+height: 90%;
+} 
+#showproductdiv{
+/* border: 1px solid green; */
+height: 70%;
+overflow-y: scroll;
+overflow-x: hidden;
+
+}
+#productdiv{
+height: 150px;
+margin-bottom: 3%;
+display: flex;
+}
+.imgdiv{
+/* border: 1px solid black; */
+width: 40%;
+}
+img{
+width: 100%;
+height: 100%;
+}
+#nameAndprice{
+padding: 1% 3% 1% 3%;
+width: 60%;
+height: 100%;
+}
+h3{
+color: black;
+font-size: medium;
+height: 20%;
+/* overflow: hidden; */
+
+}
+.allprice{
+/* border: 2px solid green; */
+height: 20%;
+width: 100%;
+display: flex;
+justify-content:space-evenly;
+
+}
+h5{
+margin: 0%;
+color: black;
+color: red;
+
+}
+.discount{
+color: dimgrey;
+text-decoration: line-through;
+}
+#allbutton{
+height: 35%;
+display: flex;
+}
+button{
+color: black;
+}
+h4{
+ color: black;
+ margin-top: 12px;
+ margin-left: 10px; 
+}
+#increse{
+height: 40%;
+margin-top: 10px;
+margin-left: 10px;
+border-radius: 10px;
+color: red;
+}
+#decrese{
+height: 40%;
+margin-top: 10px;
+margin-left: 10px;
+border-radius: 10px;
+color: red;
+}
+.color{
+height: 40%;
+margin-top: 10px;
+margin-left: 10px;
+border-radius: 5px;
+overflow: hidden;
+}
+#delete{
+height: 40%;
+margin-top: 10px;
+margin-left: 10px;
+border-radius: 10px;
+color: red;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<for shipping div style>>>>>>>>>>>>>>>>>>>>>> */
+#shippingdiv{
+    height:60px;
+    width: 100%;
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* display: grid;
+    grid-template-rows:50px 50px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#freediv{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content:space-around;
+    line-height: 0%;
+}
+#totaldiv{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content:space-around;
+    line-height: 0%;
+}
+#totalamount{
+    color: red;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<for checkout color>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    #checkout{
+    /* height: 170px; */
+    /* border: 2px solid green; */
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+}
+#continueShopping{
+    text-decoration: none;
+    color:red;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-left: 30%;
+    
+}
+#cash{
+    width: 100%;
+    border: none;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border-radius: 7px;
+    padding: 16px;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    /* margin-left: 30%; */
+}
+#payViaCard{
+   
+    /* background-color: red; */
+  
+    color: red;
+    border-radius: 7px;
+    padding: 16px;
+    font-weight:bolder;
+    margin-top: 10px;
+    border: 3px solid red;
+    margin: auto;
+    margin-top: 2%;
+    width: 100%;
+    /* margin-left: 30%; */
+}
+#payupi{
+color: red;
+}
+#delete:hover,#increse:hover,#decrese:hover{
+    cursor: pointer;
+}

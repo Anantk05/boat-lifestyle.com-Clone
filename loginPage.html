@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/32x32_256x256.png_32x32_2d0995d9-ec86-4c14-b928-71101777194c_96x96.png?v=1647426716"
+      type="icon"
+    />
+    <title>
+      Buy Earbuds, Headphones, Earphones at India’s No.1 Earwear Brand: boAt
+    </title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap");
+    </style>
+  </head>
+  <body>
+    <!--  Navbar Container -->
+    <div id="navbar_container"></div>
+    <!-- MouseOver Popup for Navbar Link list Shop  -->
+    <div id="popup_link_list_shop"></div>
+    <!-- MouseOver Popup for Navbar Link list More -->
+    <div id="popup_link_list_more"></div>
+
+    <!-- Mainbody for products or design -->
+    <div>
+      <h1>Login</h1>
+      <br />
+      <p class="para">Please enter your e-mail and Password</p>
+      <br />
+    </div>
+    <div id="log">
+      <a href="https://www.facebook.com/"
+        ><img
+          id="fb"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/225px-Facebook_f_logo_%282021%29.svg.png"
+          alt=""
+      /></a>
+      <a href="https://www.google.com/"
+        ><img id="goo" src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt=""
+      /></a>
+    </div>
+    <form>
+      <input type="text" placeholder="E-mail" id="email" /><br />
+      <!-- <input type="text" placeholder="Password" id="password"/><br> -->
+      <div style="position: relative">
+        <input
+          id="password"
+          type="password"
+          class="textfield password"
+          placeholder="Password"
+          name="pass"
+          title="Password must be 8 characters including 1 uppercase letter, 1 lowercase letter and numeric characters"
+          required
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        />
+        <a id="lnkforget" class="hyperlink">Forgot Password?</a>
+      </div>
+      <input id="btn" type="submit" value="LOGIN" /><br />
+    </form>
+    <p>New Customer? <a href="signupPage.html">Create an account</a></p>
+
+    <div class="popup" id="popup">
+      <img
+        id="boa"
+        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229"
+        alt=""
+      />
+      <h3>SPECIAL 10% OFF</h3>
+      <h3>ONLY FOR YOU !</h3>
+
+      <p1>Offer expires :</p1>
+      <h2 id="count"></h2>
+
+      <h2 id="cou">Copy Coupon Code</h2>
+      <p id="code">BOAT300</p>
+
+      <button id="close">X</button>
+    </div>
+    <!-- Append Page Footer Here -->
+    <div id="footer_container"></div>
+  </body>
+</html>
+
+<script type="module" src="./scripts/login.js"></script>

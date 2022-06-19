@@ -1,6 +1,6 @@
 # boat-lifestyle.com
     
-    boAt-lifestyle.com is a E-Commerce shopping website that deals with electronic products with different categories and also provide users with great UI/UX on its website. This is our homegrown brand
+    boAt-lifestyle.com is a E-Commerce shopping website that deals with electronic products with different categories and also provide users with great UI/UX on its website.
     ### Team Members
 
     1.  Anant Kumar

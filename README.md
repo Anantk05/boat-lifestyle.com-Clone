@@ -7,13 +7,13 @@
                     (Homepage and Navbar)
                     
     2.  Shaik Gouse Mohiddin
-                    (Login and Signup page)
+                    (Login, Signup and offerPage)
                     
     3.  Janhavi Prabhu
-                    (Products Page and Data Collection)
+                    (Products Page Data Collection and Indivisual products Page)
                     
     4.   Ghanisht Khurana
-                    (Footer and Individual Item page)
+                    (Footer)
                     
     5.  Deepak 
                     (Carts Page)

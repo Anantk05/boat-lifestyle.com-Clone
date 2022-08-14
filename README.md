@@ -7,7 +7,8 @@
     Login
     Signup
     Home Page
-    Navigator
+    Header
+    Footer
     Filter
     Products Page
     Carts Page

@@ -2,6 +2,16 @@
     
     boAt-lifestyle.com is a E-Commerce shopping website that deals with electronic products with different
     categories and also provide users with great UI/UX on its website.
+    
+## Features
+    Login
+    Signup
+    Home Page
+    Navigator
+    Filter
+    Products Page
+    Carts Page
+    Payment Page
 ## Tools 
     HTML
     CSS

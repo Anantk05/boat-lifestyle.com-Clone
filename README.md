@@ -52,5 +52,11 @@
     6.  Shivam Kumar Singh
                     (Payments Page)
                     
-                    
+      
+      
+                   
+### Some snaps of our project
+ 
+ ![image](https://user-images.githubusercontent.com/97351159/199229460-0837face-649e-4e0c-bb9b-39b7771e650f.png)
+
                     

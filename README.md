@@ -57,6 +57,7 @@
                    
 ### Some snaps of our project
  
- ![image](https://user-images.githubusercontent.com/97351159/199229460-0837face-649e-4e0c-bb9b-39b7771e650f.png)
+ ![image](https://user-images.githubusercontent.com/97351159/199230407-7b8d8d6a-fcf2-4782-93c8-feee7da06b9c.png)
+
 
                     
